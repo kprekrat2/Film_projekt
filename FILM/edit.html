@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Filmovi | Uređivanje</title>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: blueviolet;
+            color:coral;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100;
+        
+            
+        }
+
+        td, th{
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: blueviolet;
+
+        }
+
+        form {
+
+            text-align: center;
+            border: 1px solid #999;
+            padding: 0.25 em;
+            background: #eee
+
+        
+
+        }
+
+        div {
+            padding-bottom: 0.25 em;
+        }
+
+        label {
+            float: center;
+            width: 6 em;
+            text-align: right;
+            padding-right: 0.5em;
+        }
+
+        input, textarea {
+            text-align: left;
+            width: 20 em;
+            
+        }
+        
+        
+        .navbar input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+            color: black;
+        } 
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/themovies.jpg"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="#MyNavbar">
+                <ul class="nav navbar-nav navbar right">
+                   <li class="active"><a href="index.html">Početna</a></li>
+                   <li class="active"><a href="lista.html">Baza Filmova</a></li>
+                   <li class="active"><a href="dodaj.html">Dodaj film</a></li>
+                   <li class="active"><a href="edit.html">Uredi zapis</a></li>
+                   <li class="active"><input type="text" placeholder="Search..." name="search" ></li>
+                </ul>
+           
+            
+
+            </div>
+            
+        </div>
+    </nav>
+    <br>
+    <br>
+   <form align="centre">
+
+     <h2>Uređivanje zapisa: </h2>
+
+      <br>
+      <br>
+ 
+      <div>
+       <label>Naziv filma: </label>
+       <input type="text" name="nazivfilma" width="40"/><br>
+       <br>
+       </div>
+       <div>
+       <label>Žanr:</label> 
+       <input type="text" name="zanr" width="40"/><br>
+       <br>
+       </div>
+       <div>
+       <label>Godina:</label> 
+       <input type="text" name="godina" width="40"/><br>
+       <br>
+       </div>
+       <div>
+       <label>Glavni glumci:</label>
+       <input type="text" name="gglumci" width="40"/><br>
+       <br>
+       </div>
+       <div>
+       <label>Redatelj:</label>
+       <input type ="text" name="redatelj" width="40"/><br>
+       <br>
+       </div>
+       <div>
+       <br>
+       <label>Slika naslovnice:</label>
+       <input type="image" name="naslovnica" width="40"/><br>
+       </div>
+       <div>
+           <input type="submit" class="submit" name="submit" value="Unos"/>
+       </div>
+          
+
+
+   </form>
+</body>
+</html>
